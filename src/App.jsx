@@ -2719,7 +2719,11 @@ export default function App() {
                 loading="lazy"
                 decoding="async"
               />
-              <figcaption>Поддержать на Boosty</figcaption>
+              <figcaption>
+                <a href="https://boosty.to/eugeneuvarov" target="_blank" rel="noreferrer">
+                  Поддержать на Boosty
+                </a>
+              </figcaption>
               <span className="support-qr-corner support-qr-corner-bottom" aria-hidden="true" />
             </figure>
           </div>
