@@ -126,7 +126,7 @@ import './App.css'
 
 const publicAsset = (name) => `${import.meta.env.BASE_URL}${name}`
 
-const feedUrl = publicAsset('feed.xml')
+const rssInfoUrl = publicAsset('rss.html')
 
 const stydlivayaMainPartOne = {
   id: 'stydlivaya-main-part-1',
@@ -2285,7 +2285,7 @@ export default function App() {
         <nav className="nav" aria-label="Главная навигация">
           <a href="#story-map">Карта сюжета</a>
           <a href="#community">Сообщество</a>
-          <a href={feedUrl}>RSS обновлений</a>
+          <a href={rssInfoUrl}>Подписка на RSS</a>
         </nav>
       </header>
 
