@@ -1645,9 +1645,27 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 }
 
 .support-qr-frame figcaption a {
+  display: block;
+  padding: 7px 4px;
+  border: 1px solid rgba(242, 216, 167, 0.6);
+  border-radius: 8px;
+  background: rgba(217, 178, 111, 0.14);
   color: inherit;
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 2px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.support-qr-frame figcaption a::after {
+  content: ' ↗';
+  text-decoration: none;
+}
+
+.support-qr-frame figcaption a:hover,
+.support-qr-frame figcaption a:focus-visible {
+  border-color: #f2d8a7;
+  background: rgba(217, 178, 111, 0.32);
 }
 
 .support-qr-corner {

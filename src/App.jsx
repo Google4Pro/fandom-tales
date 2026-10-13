@@ -2720,7 +2720,13 @@ export default function App() {
                 decoding="async"
               />
               <figcaption>
-                <a href="https://boosty.to/eugeneuvarov" target="_blank" rel="noreferrer">
+                <a
+                  href="https://boosty.to/eugeneuvarov"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Перейти на Boosty: https://boosty.to/eugeneuvarov"
+                  title="Нажмите, чтобы перейти на Boosty"
+                >
                   https://boosty.to/eugeneuvarov
                 </a>
               </figcaption>
