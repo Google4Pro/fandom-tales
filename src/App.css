@@ -1638,9 +1638,16 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 .support-qr-frame figcaption {
   padding-top: 7px;
   color: #e5d3ff;
-  font-size: 0.59rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.045em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.support-qr-frame figcaption a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .support-qr-corner {

@@ -2721,7 +2721,7 @@ export default function App() {
               />
               <figcaption>
                 <a href="https://boosty.to/eugeneuvarov" target="_blank" rel="noreferrer">
-                  Поддержать на Boosty
+                  https://boosty.to/eugeneuvarov
                 </a>
               </figcaption>
               <span className="support-qr-corner support-qr-corner-bottom" aria-hidden="true" />
