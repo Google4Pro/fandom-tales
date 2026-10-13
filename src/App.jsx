@@ -126,8 +126,6 @@ import './App.css'
 
 const publicAsset = (name) => `${import.meta.env.BASE_URL}${name}`
 
-const rssInfoUrl = publicAsset('rss.html')
-
 const stydlivayaMainPartOne = {
   id: 'stydlivaya-main-part-1',
   cycle: 'СТЫДЛИВАЯ И ЛОХМАТЫЙ',
@@ -1875,7 +1873,7 @@ function getGraphNodePosition(node) {
 
 export default function App() {
   const [reading, setReading] = useState(false)
-  const [graphView, setGraphView] = useState('graph')
+  const [graphView, setGraphView] = useState('list')
   const [expandedStoryId, setExpandedStoryId] = useState(null)
   const [activePartId, setActivePartId] = useState('gangnam-part-1')
   const [expandedTranslations, setExpandedTranslations] = useState({})
@@ -2284,8 +2282,6 @@ export default function App() {
         </div>
         <nav className="nav" aria-label="Главная навигация">
           <a href="#story-map">Карта сюжета</a>
-          <a href="#community">Сообщество</a>
-          <a href={rssInfoUrl}>Подписка на RSS</a>
         </nav>
       </header>
 
@@ -2294,13 +2290,14 @@ export default function App() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Путеводитель по сюжету</p>
-              <h2>Полная схема истории</h2>
+              <h2>Истории и их связи</h2>
               <p className="map-intro">
-                Выбери граф, чтобы увидеть связи между событиями, или переключись на список. Узлы с опубликованными
-                историями открывают нужную главу.
+                Список историй открыт сразу. Выберите граф, чтобы посмотреть, как события связаны между собой.
               </p>
             </div>
-            <span className="map-count">{graphNodes.length} узлов на карте</span>
+            <span className="map-count">
+              {graphView === 'list' ? `${mainStoryline.length} историй в списке` : `${graphNodes.length} узлов на карте`}
+            </span>
           </div>
 
           <div className="graph-workspace-header">
@@ -2728,19 +2725,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="community scroll-reveal" id="community">
-          <div className="community-copy">
-            <p className="eyebrow">Сообщество</p>
-            <h2>Пусть каждая новая история становится частью общего мира.</h2>
-          </div>
-          <form className="newsletter-form">
-            <label htmlFor="email">Подпишись на обновления</label>
-            <div className="form-row">
-              <input id="email" type="email" placeholder="Введите email" />
-              <button type="submit">Подписаться</button>
-            </div>
-          </form>
-        </section>
       </main>
     </div>
   )

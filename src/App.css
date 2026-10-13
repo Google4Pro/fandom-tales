@@ -65,8 +65,7 @@
 .ghost-button,
 .primary-button,
 .secondary-button,
-.story-footer button,
-.newsletter-form button {
+.story-footer button {
   border: 1px solid transparent;
   border-radius: 999px;
   cursor: pointer;
@@ -82,8 +81,7 @@
 }
 
 .primary-button,
-.story-footer button,
-.newsletter-form button {
+.story-footer button {
   background: linear-gradient(135deg, #d9b26f, #f2d8a7);
   color: #1b1321;
   padding: 0.9rem 1.4rem;
@@ -93,8 +91,7 @@
 .ghost-button:hover,
 .primary-button:hover,
 .secondary-button:hover,
-.story-footer button:hover,
-.newsletter-form button:hover {
+.story-footer button:hover {
   transform: translateY(-1px);
 }
 
@@ -127,8 +124,7 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 
 #about,
 #stories,
-#story-map,
-#community {
+#story-map {
   scroll-margin-top: 128px;
 }
 
@@ -142,8 +138,7 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 
 .hero-copy h1,
 .section-head h2,
-.feature-copy h2,
-.community-copy h2 {
+.feature-copy h2 {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 0.01em;
@@ -399,8 +394,7 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 }
 
 .section-head h2,
-.feature-copy h2,
-.community-copy h2 {
+.feature-copy h2 {
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   max-width: 760px;
 }
@@ -945,10 +939,7 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 .story-list-view {
   display: grid;
   gap: 9px;
-  max-height: min(74vh, 980px);
-  overflow: auto;
   padding: 4px 5px 4px 0;
-  scrollbar-color: rgba(139, 92, 246, 0.55) rgba(15, 23, 42, 0.7);
 }
 
 .story-list-legend {
@@ -1685,40 +1676,6 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 
 .quote-box span {
   color: #d9d0ea;
-}
-
-.community {
-  margin-top: 64px;
-  padding: 32px 28px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(15, 10, 21, 0.72);
-  border-radius: 28px;
-}
-
-.newsletter-form {
-  margin-top: 24px;
-}
-
-.newsletter-form label {
-  display: block;
-  margin-bottom: 12px;
-  color: #d9d0ea;
-}
-
-.form-row {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.newsletter-form input {
-  flex: 1 1 260px;
-  min-width: 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.03);
-  color: #f5f1ff;
-  border-radius: 999px;
-  padding: 0.9rem 1rem;
 }
 
 .reader-shell {
