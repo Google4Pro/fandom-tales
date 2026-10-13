@@ -1636,36 +1636,40 @@ html.has-scroll-reveal .scroll-reveal:not(.is-visible) {
 }
 
 .support-qr-frame figcaption {
-  padding-top: 7px;
+  padding-top: 9px;
   color: #e5d3ff;
-  font-size: 0.68rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 700;
   line-height: 1.35;
-  overflow-wrap: anywhere;
 }
 
 .support-qr-frame figcaption a {
-  display: block;
-  padding: 7px 4px;
-  border: 1px solid rgba(242, 216, 167, 0.6);
-  border-radius: 8px;
-  background: rgba(217, 178, 111, 0.14);
-  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 9px 4px;
+  border: 1px solid rgba(242, 216, 167, 0.72);
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f2d8a7, #d9b26f);
+  color: #24172d;
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.support-qr-frame figcaption a::after {
-  content: ' ↗';
   text-decoration: none;
+  box-shadow: 0 4px 12px rgba(217, 178, 111, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .support-qr-frame figcaption a:hover,
 .support-qr-frame figcaption a:focus-visible {
-  border-color: #f2d8a7;
-  background: rgba(217, 178, 111, 0.32);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(217, 178, 111, 0.34);
+  filter: brightness(1.06);
+}
+
+.support-qr-frame figcaption a span + span {
+  font-size: 0.62rem;
+  font-weight: 600;
+  opacity: 0.78;
 }
 
 .support-qr-corner {

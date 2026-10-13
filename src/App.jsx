@@ -2724,10 +2724,11 @@ export default function App() {
                   href="https://boosty.to/eugeneuvarov"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Перейти на Boosty: https://boosty.to/eugeneuvarov"
+                  aria-label="Поддержать проект на Boosty"
                   title="Нажмите, чтобы перейти на Boosty"
                 >
-                  https://boosty.to/eugeneuvarov
+                  <span>Поддержать проект</span>
+                  <span>на Boosty ↗</span>
                 </a>
               </figcaption>
               <span className="support-qr-corner support-qr-corner-bottom" aria-hidden="true" />
