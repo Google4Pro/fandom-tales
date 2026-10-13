@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Fandom Tales — новые истории</title>
+    <link>https://Google4Pro.github.io/fandom-tales/</link>
+    <description>Обновления историй на Fandom Tales</description>
+    <language>ru</language>
+    <item>
+      <title>Сайт опубликован</title>
+      <link>https://Google4Pro.github.io/fandom-tales/</link>
+      <guid isPermaLink="false">fandom-tales-site-launch</guid>
+      <description>Сайт историй открыт. Подпишитесь на RSS, чтобы узнавать о новых публикациях.</description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
